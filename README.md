@@ -13,6 +13,8 @@ bsport_bookings_count 117
 
 It uses the total number of bookings returned by the bsport API and does not parse the bookings themselves. Thus, the canceled bookings are also counted.
 
+The gauge is updated every hour.
+
 ## Installation
 
 Grab the latest binary from the releases, or build it yourself!
