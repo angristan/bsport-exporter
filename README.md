@@ -21,6 +21,15 @@ Grab the latest binary from the releases, or build it yourself!
 
 ## Usage
 
+```
+➜ ./bsport-exporter -help
+Usage of ./bsport-exporter:
+  -member string
+        BSport member ID
+  -token string
+        BSport API token
+```
+
 Go on [backoffice.bsport.io](https://backoffice.bsport.io/) and inspect the network requests.
 
 You can extract your member ID from the query string of some requests and your token from the authorization header of any request.
