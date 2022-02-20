@@ -24,3 +24,16 @@ Grab the latest binary from the releases, or build it yourself!
 Go on [backoffice.bsport.io](https://backoffice.bsport.io/) and inspect the network requests.
 
 You can extract your member ID from the query string of some requests and your token from the authorization header of any request.
+
+Then, lauch the exporter:
+
+```sh
+bsport-exporter -member xxxxxx -token xxxxxx
+```
+
+You should see something like:
+
+```
+INFO[0000] Beginning to serve on 0.0.0.0:6677
+INFO[0000] Updated gauge                                 bookings=118
+```
