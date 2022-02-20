@@ -39,7 +39,10 @@ func main() {
 	prometheus.MustRegister(gauge)
 
 	s := gocron.NewScheduler(time.UTC)
-	s.Every(1).Hour().Do(updateGauge)
+	_, err := s.Every(1).Hour().Do(updateGauge)
+	if err != nil {
+		logrus.WithError(err).Fatal("Error scheduling job")
+	}
 	s.StartAsync()
 
 	http.Handle("/metrics", promhttp.Handler())
