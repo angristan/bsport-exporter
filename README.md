@@ -34,7 +34,7 @@ Go on [backoffice.bsport.io](https://backoffice.bsport.io/) and inspect the netw
 
 You can extract your member ID from the query string of some requests and your token from the authorization header of any request.
 
-Then, lauch the exporter:
+Then, launch the exporter:
 
 ```sh
 bsport-exporter -member xxxxxx -token xxxxxx
